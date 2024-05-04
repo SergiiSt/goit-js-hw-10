@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/1-timer.css" />
     <title>Timer</title>
-</head>
-<body>
+  </head>
+  <body>
     <input type="text" id="datetime-picker" />
-<button type="button" data-start>Start</button>
+    <button type="button"  data-start>Start</button>
 
-<div class="timer">
-  <div class="field">
-    <span class="value" data-days>00</span>
-    <span class="label">Days</span>
-  </div>
-  <div class="field">
-    <span class="value" data-hours>00</span>
-    <span class="label">Hours</span>
-  </div>
-  <div class="field">
-    <span class="value" data-minutes>00</span>
-    <span class="label">Minutes</span>
-  </div>
-  <div class="field">
-    <span class="value" data-seconds>00</span>
-    <span class="label">Seconds</span>
-  </div>
-</div>
-<script type="module" src="./js/1-timer.js"></script>
-</body>
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <script type="module" src="./js/1-timer.js"></script>
+  </body>
 </html>

@@ -1,0 +1,48 @@
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid black;
+  padding-left: 16px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+
+button {
+  width: 75px;
+  height: 40px;
+  border-radius: 4px;
+  border: transparent;
+  background-color: #4e75ff;
+  color: #ffffff;
+}
+
+button:disabled {
+background-color: #989898;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 55px;
+}
+
+.value {
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 40px;
+}
+
+.label {
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
