@@ -9,6 +9,7 @@ const refs = {
   timerMinutesEl: document.querySelector('[data-minutes]'),
   timerSecondsEl: document.querySelector('[data-seconds]'),
   buttonEl: document.querySelector('[data-start]'),
+  datePicker: document.querySelector('#datetime-picker'),
 };
 
 let userSelectedDates;
@@ -18,6 +19,7 @@ refs.buttonEl.disabled = true;
 function makeBtnActive() {
   if (userSelectedDates) {
     refs.buttonEl.disabled = false;
+    refs.datePicker.disabled = true;
   }
 }
 
@@ -73,6 +75,7 @@ function timer() {
   timerInterval = setInterval(() => {
     if (userSelectedDates) {
       refs.buttonEl.disabled = true;
+      refs.datePicker.disabled = true;
       //   console.log(userSelectedDates);
       difference = userSelectedDates.getTime() - new Date().getTime();
       if (difference < 0) {

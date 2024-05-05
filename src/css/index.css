@@ -1,0 +1,22 @@
+.btn-sec {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #4e75ff;
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+a:hover {
+  background-color: #6c8cff;
+}

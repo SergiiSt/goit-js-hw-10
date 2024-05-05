@@ -2,10 +2,25 @@
   width: 272px;
   height: 40px;
   padding: 0;
-  border: 1px solid black;
+  border: 1px solid #808080;
   padding-left: 16px;
   border-radius: 4px;
   margin-bottom: 32px;
+  outline: none;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000000;
+}
+
+#datetime-picker:focus {
+  border: 1px solid #4e75ff;
+}
+
+#datetime-picker:disabled {
+  border: 1px solid #808080;
+  background-color: #fafafa;
+  color: #808080;
 }
 
 button {
@@ -17,8 +32,12 @@ button {
   color: #ffffff;
 }
 
+button:hover {
+  background-color: #6c8cff;
+}
+
 button:disabled {
-background-color: #989898;
+  background-color: #989898;
 }
 
 .timer {
@@ -45,4 +64,22 @@ background-color: #989898;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
+}
+
+a {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #4e75ff;
+  padding: 8px 25px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+a:hover {
+  background-color: #6c8cff;
 }
